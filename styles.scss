@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opener-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .opener-text {
+    max-width: 40vw;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  overflow: hidden;
+  background: url("resources/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.img-container {
+  width: 40%;
+}
+
+.paragraph-spacer {
+  margin-top: 6rem;
+}
+
+.paragraph-spacer-sm {
+  margin-top: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .opener-container {
+    .opener-text {
+      max-width: 90%;
+    }
+  }
+}
