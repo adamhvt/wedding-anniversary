@@ -75,4 +75,17 @@ ul {
   .opener-container .opener-text {
     max-width: 90%;
   }
+  section:nth-child(odd) .row {
+    flex-direction: column;
+  }
+  section:nth-child(even) .row {
+    flex-direction: column-reverse;
+  }
+  .row .img-container {
+    width: 100%;
+  }
+  .row .text-container {
+    margin: 30vh 0;
+    width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -78,4 +78,29 @@ ul {
       max-width: 90%;
     }
   }
+
+  section {
+    &:nth-child(odd) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    &:nth-child(even) {
+      .row {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .row {
+    .img-container {
+      width: 100%;
+    }
+
+    .text-container {
+      margin: 30vh 0;
+      width: 80%;
+    }
+  }
 }
